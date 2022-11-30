@@ -1,0 +1,13 @@
+require("helder.plugins-setup")
+require("helder.core.options")
+require("helder.core.colorscheme")
+require("helder.core.keymaps")
+require("helder.plugins.comment")
+require("helder.plugins.nvim-tree")
+require("helder.plugins.telescope-setup")
+require("helder.plugins.nvim-cmp")
+-- require("helder.plugins.lsp.mason")
+-- require("helder.plugins.lsp.lspsaga")
+-- require("helder.plugins.lsp.lspconfig")
+
+vim.lsp.set_log_level("debug")
