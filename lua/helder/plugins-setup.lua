@@ -72,14 +72,14 @@ return packer.startup(function(use)
   use("hrsh7th/cmp-path")
 
   -- snippets
-  use({"L3MON4D3/LuaSnip", tag = "v<CurrentMajor>.*"})
+  use("L3MON4D3/LuaSnip")
   use("saadparwaiz1/cmp_luasnip")
   use("rafamadriz/friendly-snippets")
 
   -- The autocompletion works until these plugins below
   -- are installed. We'll see what happens after their installation.
 
-  -- managing & installing lsp servers
+  -- managing & installing lsp servers, linter & formatters
   use("williamboman/mason.nvim")
   use("williamboman/mason-lspconfig.nvim")
 
@@ -89,6 +89,10 @@ return packer.startup(function(use)
   use({ "glepnir/lspsaga.nvim", branch = "main" })
   use("jose-elias-alvarez/typescript.nvim")
   use("onsails/lspkind.nvim")
+
+  -- formatting & linting
+  use("jose-elias-alvarez/null-ls.nvim")
+  use("jayp0521/mason-null-ls.nvim")
 
   if packer_bootstrap then
     require("packer").sync()

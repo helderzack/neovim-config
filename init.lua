@@ -9,5 +9,6 @@ require("helder.plugins.nvim-cmp")
 require("helder.plugins.lsp.mason")
 require("helder.plugins.lsp.lspsaga")
 require("helder.plugins.lsp.lspconfig")
+require("helder.plugins.lsp.null-ls")
 
 vim.lsp.set_log_level("debug")
