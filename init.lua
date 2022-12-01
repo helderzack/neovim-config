@@ -10,5 +10,8 @@ require("helder.plugins.lsp.mason")
 require("helder.plugins.lsp.lspsaga")
 require("helder.plugins.lsp.lspconfig")
 require("helder.plugins.lsp.null-ls")
+require("helder.plugins.autopairs")
+require("helder.plugins.treesitter")
+require("helder.plugins.gitsigns")
 
 vim.lsp.set_log_level("debug")
