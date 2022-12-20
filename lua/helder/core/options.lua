@@ -25,8 +25,8 @@ opt.termguicolors = true
 opt.background = "dark"
 opt.signcolumn = "yes"
 
--- backspace
-opt.backspace = "indent,eol,start"
+vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
+vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
 
 -- clipboard
 opt.clipboard:append("unnamedplus")
@@ -36,4 +36,3 @@ opt.splitright = true
 opt.splitbelow = true
 
 opt.iskeyword:append("-")
-

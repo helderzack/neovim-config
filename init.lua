@@ -15,3 +15,4 @@ require("helder.plugins.treesitter")
 require("helder.plugins.gitsigns")
 
 vim.lsp.set_log_level("debug")
+vim.g.python3_host_prog = "/usr/bin/python3.9"

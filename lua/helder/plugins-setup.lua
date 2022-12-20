@@ -61,11 +61,6 @@ return packer.startup(function(use)
 	use({ "nvim-telescope/telescope.nvim", branch = "0.1.x" })
 	use("nvim-lua/plenary.nvim")
 
-	-- use({
-	--   "nvim-treesitter/nvim-treesitter",
-	--   run = ":TSUpdate"
-	-- })
-
 	-- autocompletion
 	use("hrsh7th/nvim-cmp")
 	use("hrsh7th/cmp-buffer")
